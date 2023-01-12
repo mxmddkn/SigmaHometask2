@@ -1,0 +1,73 @@
+.footer
+    padding: 110px 0 80px 0     
+    min-height: 340px
+    &__wrapper
+        display: flex
+        flex-flow: wrap
+        justify-content: space-between
+    &__header
+        font-family: 'Poppins'
+        font-weight: 500
+        font-size: 44px
+        line-height: 66px
+        color: #181E4B
+    &__descr
+        font-family: 'Poppins'
+        font-weight: 500
+        font-size: 13px
+        line-height: 124.5%
+        color: #5E6282
+        margin-top: 20px
+    &__item
+        &-head
+            font-family: 'Poppins'
+            font-weight: 700
+            font-size: 21px
+            line-height: 124.5%
+            color: #080809
+        &-menu
+            margin-top: 35px
+            list-style-type: none
+        &-link
+            font-family: 'Poppins'
+            font-weight: 500
+            font-size: 18px
+            line-height: 124.5%
+            margin-top: 12px
+            &:nth-last-child(3)
+                margin-top: 0
+            a
+                color: #5E6282
+                text-decoration: none
+                &:hover
+                    text-decoration: underline
+    &__icons
+        display: flex
+        padding: 15px
+    &__logo1
+        margin-right: 50px
+        position: relative
+        @include footer_round1
+    &__logo2
+        margin-right: 50px
+        position: relative
+        @include footer_round2
+    &__text
+        margin-top: 25px
+        font-family: 'Poppins'
+        font-weight: 500
+        font-size: 20px
+        line-height: 124.5%
+        letter-spacing: 0.005em
+        color: #5E6282
+    &__img
+        margin-top: 15px
+    &__right
+        text-align: center
+        margin-top: rem(85)
+        font-family: 'Poppins'
+        font-weight: 500
+        font-size: 14px
+        line-height: 124.5%
+        color: $small
+

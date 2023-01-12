@@ -1,0 +1,179 @@
+.promo
+    min-height: 800px
+    background: url(../img/decore/ellipse_main.svg), url(../img/decore/decore_main.svg)
+    background-position: 0px 0px, top right
+    background-size: auto, auto
+    background-repeat: no-repeat, no-repeat
+    position: relative
+    .nav 
+        padding-top: 47px
+        &__wrapper 
+            display: flex
+            justify-content: space-between
+        &__menu
+            display: flex
+            align-items: center
+            list-style-type: none
+            gap: 20px
+            &-elem
+                padding: 9px 21px
+                align-items: center
+                transition: all 300ms ease
+                &:hover
+                    transform: scale(1.2)
+                    a
+                        color: $dark-red
+                a
+                    text-decoration: none
+                    color: #212832
+                    font-family: 'Google Sans'
+                    font-weight: 400
+                    font-size: 17px
+                    line-height: 22px
+                    transition: all 300ms ease
+        &__elements
+            display: flex
+            gap: 40px
+        &__info
+            display: flex
+            gap: 20px
+            align-items: center
+            list-style-type: none
+            line-height: 22px
+            &-item
+                padding: 8px 20px
+                align-items: center
+                border: 1px solid transparent
+                &:nth-last-child(1)
+                    padding-right: 0
+                &:hover
+                    transform: scale(1.2)
+                    border: 1px solid #000
+                    border-radius: 10px
+                a
+                    text-decoration: none
+                    font-family: 'Google Sans'
+                    font-weight: 500
+                    font-size: 17px
+                    line-height: 22px
+                    color: #212832
+            &-item2
+                padding: 8px 0 8px 20px
+                align-items: center
+                select
+                    text-decoration: none
+                    font-family: 'Google Sans'
+                    font-weight: 500
+                    font-size: 17px
+                    line-height: 22px
+                    color: #212832
+                    border: none
+                    background-color: #FFF1DA
+                    width: 100%
+                    height: 100
+                    &:focus
+                        outline: none
+    &__wrapper 
+        display: grid
+        grid-template-columns: 550px 590px
+        grid-template-rows: 765px
+        margin-top: 18px
+    &__text
+        margin-top: 112px
+        &-descr, &-subdescr
+            font-family: 'Poppins'
+            font-weight: 500
+            font-size: 16px
+            line-height: 30px
+            color: #5E6282
+            margin-top: 30px
+        &-subdescr
+            margin-top: 0
+    &__subheader 
+            font-family: 'Poppins'
+            font-weight: 700
+            font-size: rem(20)
+            line-height: rem(30)
+            text-transform: uppercase
+            color: $dark-red
+    &__header
+        font-family: 'Volkhov'
+        font-style: normal
+        font-weight: 700
+        font-size: rem(83)
+        line-height: rem(89)
+        color: #181E4B
+        margin-top: 25px
+        letter-spacing: -0.04em
+    &__img 
+        position: relative
+        &:hover &-image
+            animation: plane 3s linear
+        &-main
+            width: 100%
+            position: relative
+            height: 100%
+            object-fit: none
+            object-position: center
+            z-index: 2
+            img
+                max-width: 100%
+                height: 100%
+                object-fit: none
+                object-position: 85% 15%
+        &-image 
+            z-index: 5
+            position: absolute
+            left: 0
+            top: 0
+        &-image2
+            z-index: 0
+            position: absolute
+            right: 0
+            top: 100px
+    &__btns 
+        margin-top: 34px
+        display: flex
+        align-items: center
+    &__link
+        font-weight: 500
+        font-size: 18px
+        line-height: 23px
+        text-align: center
+        color: #FFFFFF
+        text-decoration: none
+        margin-right: 44px
+    &__round
+        position: relative
+        margin-right: 21px
+        @include triangle
+        &::before
+            top: 50%
+            left: 40%
+            transform: translateX(-50%)
+            transform: translateY(-50%)
+    &__play 
+        font-family: 'Poppins'
+        font-weight: 500
+        font-size: 17px
+        line-height: 26px
+        color: #686D77
+        text-decoration: none
+
+@keyframes plane 
+    0% 
+        left: 0
+        top: 0
+        transform: scale(0.7)
+    50% 
+        top: -500px
+        transform: scale(0.7)
+    60%
+        left: 1000px
+        transform: scale(0.7)
+    100% 
+        left: 0
+        top: 0
+  
+
+

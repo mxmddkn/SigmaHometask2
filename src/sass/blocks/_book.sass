@@ -1,0 +1,160 @@
+.book
+    padding-top: 186px
+    min-height: 800px
+    &__wrapper
+        display: grid
+        grid-template-columns: repeat(auto-fit, rem(500))
+        column-gap: 140px
+        justify-content: center
+        row-gap: 30px
+    &__header
+        margin-top: 15px
+    &__elem
+        display: grid
+        grid-template-column: 1fr
+        grid-template-rows: repeat(3, auto)
+        row-gap: rem(45)
+        margin-top: rem(30)
+        padding-right: 116px
+    &__item
+        position: relative
+        padding-left: 68px
+        @include circle_top
+        &-head
+            font-weight: 700
+            font-size: 16px
+            line-height: 124.5%
+            color: $small
+        &-descr
+            font-weight: 400
+            font-size: 16px
+            line-height: 124.5%
+            color: $small
+            margin-top: 4px
+        &-img
+            position: absolute
+            top: 13px
+            left: 13px
+    .middle 
+        @include circle_mid
+    .bot
+        @include circle_bot
+    &__block
+        background: url(../img/decore/book_bg.svg)
+        background-position: top -25px left -19px
+        background-size: 90%
+        background-repeat: no-repeat
+    &__card
+        position: relative
+        width: 64%
+        background: #FFFFFF
+        box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481)
+        border-radius: 26px
+        margin-top: 40px
+        padding: 20px 25px 25px 25px
+        &-image
+            display: flex
+            justify-content: center
+            img
+                max-width: 100%
+                height: 100%
+                border-radius: 5px
+    &__text
+        margin-top: 25px
+        &-header
+            font-family: 'Poppins'
+            font-weight: 500
+            font-size: 18px
+            line-height: 124.5%
+            letter-spacing: 0.015em
+            color: #080809
+        &-descr
+            font-family: 'Poppins'
+            font-weight: 500
+            font-size: 16px
+            line-height: 124.5%
+            letter-spacing: -0.005em
+            color: #84829A
+            margin-top: 13px
+        &-elements 
+            display: flex
+            margin-top: 20px
+        &-item
+            display: flex
+            align-items: center
+            justify-content: center
+            background: #F5F5F5
+            border-radius: 100%
+            width: 36px
+            height: 36px
+            margin-right: rem(15)
+            &:nth-last-child(1)
+                margin-right: 0
+        &-info
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-top: 30px
+        &-subdescr
+            position: relative
+            padding-left: 31px
+            font-family: 'Poppins'
+            font-weight: 500
+            font-size: rem(16)
+            line-height: 124.5%
+            letter-spacing: -0.02em
+            color: #84829A
+            @include house
+        &-logo
+            display: flex
+            align-content: center
+    &__current
+        position: absolute
+        display: grid
+        grid-template-columns: auto 1fr
+        grid-template-rows: auto
+        column-gap: 10px
+        padding: rem(20)
+        bottom: 13%
+        right: -51%
+        background: #FFFFFF
+        box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481)
+        border-radius: 18px
+        z-index: 3
+        &-subheader
+            font-family: 'Poppins'
+            font-weight: 500
+            font-size: 14px
+            line-height: 124.5%
+            letter-spacing: -0.035em
+            color: #84829A
+        &-header
+            font-family: 'Poppins'
+            font-weight: 500
+            font-size: rem(18)
+            line-height: 124.5%
+            letter-spacing: -0.015em
+            color: #080809
+            margin-top: 6px
+        &-descr, span
+            font-family: 'Poppins'
+            font-weight: 500
+            font-size: 14px
+            line-height: 124.5%
+            letter-spacing: -0.055em
+            margin-top: 12px
+            span
+                color: #8A79DF
+        &-scale
+            width: 150px
+            height: 5px
+            margin-top: 10px
+            border-radius: 30px
+            background: #F5F5F5
+        &-scale2
+            background: #8A79DF
+            width: 150px
+            height: 5px
+            margin-top: 10px
+            border-radius: 30px
+                

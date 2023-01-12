@@ -1,0 +1,38 @@
+.reviews 
+    padding-top: rem(210)
+    min-height: 280px
+    &__wrapper
+        display: grid
+        grid-template-columns: repeat(auto-fit, 500px)
+        grid-template-rows: auto
+        row-gap: 85px
+        justify-content: center
+        column-gap: 140px
+    &__preheader
+        text-transform: uppercase
+    &__header
+        margin-top: 8px
+    &__item
+        position: relative
+        width: 500px
+        background: #FFFFFF
+        box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481)
+        border-radius: 10px
+        padding: 28px 68px 34px 34px
+        @include face
+        &-text, &-head, &-descr
+            color: $small
+            font-family: 'Poppins'
+            font-weight: 500
+            font-size: rem(16)
+            line-height: 32px
+        &-head
+            font-weight: 600
+            font-size: 18px
+            line-height: 27px
+            margin-top: rem(35)
+        &-descr
+            font-size: 14px
+            line-height: 21px
+            margin-top: 5px
+
